@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap);
+
+:root {
+    --Verydarkblue-body : hsl(217, 54%, 11%);
+    --Verydarkblue-card : hsl(216, 50%, 16%);
+    --Verydarkblue-line : hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan : hsl(178, 100%, 50%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: var(--Softblue);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+body .container .content a {
+    text-decoration: none;
+}
+
+body .container .content a:hover {
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+body .container .content a:hover {
+    color: var(--Cyan) !important;
+    font-weight: 600;
+}
+
+body {
+    background-color: var(--Verydarkblue-body);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .container {
+    max-width: 18vw;
+    padding: 15px;
+}
+
+body .container .content {
+    background-color: var(--Verydarkblue-card);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+body .container  .content .token {    
+    text-align: center;
+    background-color: var(--Cyan);
+    background-image: url(./images/icon-view.svg) ;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: center;
+    height: 305px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+body .container  .content .token img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+body .container  .content .token img:hover {
+    color: var(--Cyan) !important;
+    opacity: 0.5;
+}
+
+body .container .content h1 {
+    margin-bottom: 25px;
+}
+
+body .container .content .text-tittle {
+    font-weight: 400;
+    color: var(--White);
+    font-size: 20px;
+}
+
+body .container .content .text-content {    
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+body .container .content .container-value {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+body .container .content .content-value {
+    display: flex;
+}
+
+body .container .content .content-value p {
+    justify-content: center;
+    padding-left: 10px;
+}
+
+body .container .content .content-value .text-value {
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+body .container .content hr{
+    background-color: var(--Verydarkblue-line);
+    height: 3px;
+    margin-bottom: 25px;
+}
+
+body .container .content .footer-usuario  {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+body .container .content .footer-usuario img {    
+    width: 40px;
+    border: 2px solid var(--White);
+    border-radius: 50px;
+}
+
+body .container .content .text-user {
+    align-self: center;
+    padding-left: 20px;
+}
+
+body .container .content .footer-usuario a {
+    color:  var(--White);
+}
