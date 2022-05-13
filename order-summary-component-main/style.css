@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap);
+
+:root {
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+.margin-space {
+    margin-bottom: 15px;
+}
+
+body .container {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+body .container .content {
+    min-width: 315px;
+    width: 77vw;
+    max-width: 384px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+body .container .content .img-header {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+body .container .content .text {
+    padding: 25px;
+}
+
+body .container .content .text-center {
+    padding: 5px;
+}
+
+body .container .content .text-title {
+    font-weight: 900;
+    color: var(--DarkBlue);
+    font-size: 26px;
+}
+
+body .container .content .text-content {
+    font-weight: 500;
+    color: var(--DesaturatedBlue);
+}
+
+body .container .content .text-pricePayment {
+    background-color: var(--VeryPaleBlue);
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+}
+
+body .container .content .text-pricePayment img {
+    width: 42px;
+}
+
+body .container .content .text-pricePayment .text-price {
+    margin-left: 25px;
+}
+
+body .container .content .text-pricePayment .change-plan {    
+    align-self: center;
+    width: 100%;
+    text-align: end;
+}
+
+.change-plan a:hover {
+    text-decoration: none;
+    color: rgb(120, 115, 215)
+}
+
+body .container .content .action .payment {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--BrightBlue);
+}
+
+body .container .content .action a{
+    text-decoration: none;  
+}
+
+body .container .content .action a .payment {
+    color: white;
+}
+
+body .container .content .action a:hover .payment {
+    background-color: rgb(120, 115, 215)
+}
+
+body .container .content .action a .cancel {
+   color: var(--DesaturatedBlue);
+}
+
+body .container .content .action a:hover .cancel {
+   color: var(--DarkBlue);
+   font-weight: 900;
+}
+
+
+
+body .container .container-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: auto;
+}
