@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root {
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan : hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+    --TransparentWhite : hsla(0, 0%, 100%, 0.75); /* (paragraphs) */
+    --VeryLightGray : hsl(0, 0%, 95%); /* (background, headings, buttons) */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    color:var(--TransparentWhite);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+}
+
+.font-bold {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2em;
+}
+
+body {
+    background-color: var(--VeryLightGray);
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.model-button-back {
+    padding: 8px 25px;
+    border-radius: 20px;
+}
+
+button:active {
+    color: var(--VeryLightGray);
+    background: hsla(0, 0%, 0%, 0);
+    border: 2px solid var(--VeryLightGray);
+
+}
+
+.model-content {
+    display: flex;
+    flex-flow: column;
+    min-height: 300px;
+    justify-content: space-between;
+}
+
+.model-sedan {
+    background-color: var(--BrightOrange);
+    border-radius: 10px 0px 0px 10px;
+    flex: 1 1 260px;
+}
+
+.model-button-sedan {
+    color: var(--BrightOrange);
+} 
+
+.model-suv {
+    background-color: var(--DarkCyan);
+    flex: 1 1 260px;    
+}
+
+.model-button-suv {
+    color: var(--DarkCyan);
+} 
+
+.model-luxury {
+    background-color: var(--VeryDarkCyan);  
+    border-radius: 0px 10px 10px 0px;    
+    flex: 1 1 260px;  
+}
+
+.model-button-luxury {
+    color: var(--VeryDarkCyan);
+} 
+
+.title-uppercase {
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    max-width: 70%;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.model-box {
+    padding: 30px;
+    max-width: 450;
+    max-height: 100%;
+}
+
+.model-icon {
+    width: 50px;
+}
+
+.model-paragraph p {
+    line-height: 1.5rem;
+    padding-bottom: 30px;
+}
+
+.attribution {
+    color: black;
+}
+
+
+@media only screen and (max-width: 1114px) {
+
+    .model-sedan {
+        border-radius: 10px 0px 0px 0px;
+    }
+
+    .model-suv {  
+        border-radius: 0px 10px 0px 0px;
+
+    }
+
+    .model-luxury {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 742px) {
+
+    .model-sedan {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .model-suv {  
+        border-radius: 0px 0px 0px 0px;
+
+    }
+
+    .model-luxury {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
